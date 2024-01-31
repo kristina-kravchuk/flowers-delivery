@@ -11,3 +11,161 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body{
+  background-color: #F2BED1;
+}
+.sale{
+  padding: 10px;
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #A367B1;
+  display: flex;
+  justify-content: center;
+}
+.header{
+  background-image: url(./assets/photo6.avif);
+  height: 500px;
+  width: auto;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+h1, h2, h3, p{
+  font-family: 'Nanum Myeongjo', serif;
+
+}
+.info{
+  padding:5px ;
+}
+.bouquets{
+  width: 300px;
+  height: 400px;
+  cursor: pointer;
+}
+/* .bouquets:hover{
+  width: 320px;
+  height: 420px;
+} */
+
+.bouquets_container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.bouquets_item{
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis:16%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.category{
+  display: flex;
+  justify-content: space-around;
+  background-color: #A367B1;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.icon{
+  width: 60px;
+}
+.categoryButtonSelected{
+  background-color: #DFCCFB;
+}
+.categoryButton:hover {
+  background-color: #FFF8C9;
+
+}
+.categoryButton{
+  cursor: pointer;
+  margin: 5px;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: 'Nanum Myeongjo', serif;
+}
+.modal{
+  height: 300px;
+  width:400px ;
+  background-color: rgba(130, 59, 59, 0.4);
+  position: fixed;
+  display: flex;
+  align-self: flex-end;
+  top: 0;
+  left: 0;
+  overflow:hidden;
+  overflow-y:auto;
+  transition: opasity 0.3s;
+  z-index:999,
+}
+.modal-wrapper{
+  position:absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100%;
+}
+/* .modal-content{
+  position: relative;
+  margin: 20px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 20px 10px 10px 10px;
+  transform: translateY(-50px);
+  transition: opacity0.3s, transform 0.3s;
+} */
+.modal-close-button{
+  position: fixed;
+  background-color: #BEADFA;
+  color: white;
+  border: none;
+}
+.icon-delete{
+  width: 20px;
+}
+.btn-quantity{
+  padding: 5px;
+  background-color:#A367B1 ;
+  border: solid 1px #DFCCFB;
+  border-radius: 5px;
+  margin: 5px;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 15px;
+}
+.container-quantity{
+  display: flex;
+ justify-content: center;
+}
+.header-items{
+  font-weight: bolder;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #5D3587;
+}
+@media all and (max-width: 600px){ 
+.header{
+  flex-wrap: wrap;
+}
+.category{
+  font-size: 15px;
+  padding:5px 15px ;
+}
+}
+@media all and (max-width: 300px){ 
+  .header{
+    position: fixed;
+    background-position: center;
+    height: fit-content;
+  }
+
+  
+  }
